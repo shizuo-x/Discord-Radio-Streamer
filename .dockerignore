@@ -1,0 +1,14 @@
+# Exclude common unnecessary files/folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.git/
+.gitignore
+.env # Important: Don't include your credentials file in the image
+Dockerfile
+docker-compose.yml # If you use compose
+*.md # Optional: Exclude markdown files

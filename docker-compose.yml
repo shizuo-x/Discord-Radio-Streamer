@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  radio-bot:
+    build: .
+    container_name: discord-radio-bot
+    restart: unless-stopped
+    # CRITICAL: Tells Compose to load environment variables from a file named '.env'
+    # located in the same directory as this docker-compose.yml file.
+    env_file:
+      - .env
